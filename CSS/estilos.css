@@ -601,9 +601,18 @@ opacity: 1
 
 /* Aviso legal y cookies */
 
-p .uno {
-    background-color: white;
+p.uno {
     color: black;
-    box-shadow: 4px 4px 2px crimson;
-    margin: 40px
+    display: flex;
+    align-content: center;
+    flex-basis: 300px;
+    flex-grow: 3;
+    margin: 120px;
+    padding: 50px;
+    text-align: justify;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 4px 4px #DC143C;  
 }
