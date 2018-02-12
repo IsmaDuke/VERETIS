@@ -598,3 +598,12 @@ input[type="submit"]:hover {
 #condiciones:checked~input[type=submit] {
 opacity: 1
 }
+
+/* Aviso legal y cookies */
+
+p .uno {
+    background-color: white;
+    color: black;
+    box-shadow: 4px 4px 2px crimson;
+    margin: 40px
+}
