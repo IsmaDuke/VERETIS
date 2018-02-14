@@ -132,106 +132,6 @@ h1 {
     flex-direction: column;
 }
 
-/* Trajetas nuevas */
-
-.tarjeta {
-    
-    width: 300px;
-    height: 400px;
-    box-shadow: 2px 2px 4px crimson;
-    padding: 10px;
-    margin: 20px;
-    background-color: white
-}
-
-.datos {
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 10px;
-    
-}
-.imagen {
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    padding-right: 15px;
-    padding-top: 10px
-}
-
-.imagen img {
-     height: 200px;
-}
-
-body {
-    font-family: 'Nunito', sans-serif;
-    color: #666666;
-}
-
-.btn {
-    background: -webkit-linear-gradient(top, crimson, red);
-    color: black;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    border-bottom: 4px solid rgb(168, 3, 36);
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 18px;
-    align-items: center;
-}
-
-.direccion a {
-    margin-top: 20px
-}
-.btn:hover {
-    background-color: 4px solid rgb(168, 3, 36)
-}
-.top {
-    display: flex;
-    justify-content: space-between;
-    width: 280px
-}
-
-.direccion p:first-child {
-    color: black;
-    font-weight: bold;
-}
-
-
-.direccion {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-right: 15px;
-    padding-top: 10px
-
-}
-
-.contenedor { /*grid para localizacion automatica de filas y columnas*/
-    display: flex;
-    grid-template-columns: repeat(auto-fit, 300px); /*auto-fit crea tantas columnas como necesitamos del ancho especificado*/
-    grid-template-rows: repeat(4, 400px);
-    grid-gap: 40px;
-    justify-content: space-around;
-}
-.nuevo {
-    background-color: #DC143C;
-    color: white;
-}
-.calle {
-    height: 80px;
-}
 
 /* botones */
 
@@ -406,6 +306,26 @@ footer a:hover {
     display: flex
 }
 
+.col12 {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    box-shadow: 4px 4px 2px crimson;
+    font-family: 'Abril Fatface', cursive;
+    height: 200px;
+    background-color: white;
+    flex-basis: 300px;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 25px
+}
+.fila6 {
+    display: flex;
+    margin: 40px;
+    justify-content: center;
+    align-items: center
+}
 /* Formulario*/
 
 .contenedr {
@@ -764,4 +684,192 @@ p.uno {
     border: none; 
     border-radius: 5px;
     text-decoration: none 
+}
+
+/* aviso */
+
+.fila2 {
+    padding: 40px;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white
+}
+
+.col333 {
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+/* info */
+.titulo {
+padding: 60px 60px 0px 90px;
+display: flex;
+flex-wrap: wrap;
+font-size: 22px;
+background-color: white;
+border-radius: 15px;
+}
+
+.fotos {
+    padding: 30px 40px 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0x 20px;
+    background-color: white;
+    box-shadow: 4px 2px crimson
+}
+
+.fila3 {
+    padding: 40px;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 40px;
+    background-color: white
+}
+
+.fila p {
+    background-color: white;
+    text-align: justify;
+   padding: 40px
+}
+.col22 {
+justify-content: center;
+ margin-left: 400px;
+ margin-top: 20px 
+}
+
+/*Media Queries*/
+
+@media (min-witdh: 1359px ) {
+    hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 920px) {
+    .centro, .izquierda, .derecha {
+        align-items: center;
+        flex-direction: column
+        /* flex-basis: 200px */
+    }
+    nav {
+        display: none;
+    }
+    header .burger {
+        display: initial;
+    }
+    .hero h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    .hero h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+    .columna img {
+        height: 160px;
+    }
+    .columna.boton {
+        margin: 40px;
+        font-size: 18px;
+        padding: 12px;
+        border-radius: 10px
+    }
+    .newsletter {
+        font-size: 24px;
+        text-align: center;
+    }
+    .boton_newsletter {
+        font-size: 18px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .input_newsletter {
+        font-size: 20px;
+        padding: 15px;
+        border-radius: 10px
+        }
+    
+}
+}
+
+
+@media (max-width: 740px) {
+    nav {
+        display: none;
+    }
+    header .burger {
+        display: initial;
+    }
+    .hero h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    .hero h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+    .columna img {
+        height: 160px;
+    }
+    .columna.boton {
+        margin: 40px;
+        font-size: 18px;
+        padding: 12px;
+        border-radius: 10px
+    }
+    .newsletter {
+        font-size: 24px;
+        text-align: center;
+    }
+    .boton_newsletter {
+        font-size: 18px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .input_newsletter {
+        font-size: 20px;
+        padding: 15px;
+        border-radius: 10px
+        }
+    
+}
+
+@media (max-width: 640px) {
+    .fila2 { 
+   flex-direction: column;
+   align-items: center;
+}
+    .separador {
+    display: initial;
+   }
+   .columna {
+       margin-top: 20px
+   }
+   .slogan {
+       font-size: 28px;
+   }
+   .col100 {
+       flex-direction: column;
+       align-items: center;
+   } 
+}
+   
+}
+@media (max-width: 420px) {
+    body {
+        font-size: 18px;
+    }
+    .fila2 {
+        margin: 20px 10px;
+    }
+
 }
